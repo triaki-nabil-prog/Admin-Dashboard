@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 1.1rem;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+ul{
+    list-style: none;
+}
+.container {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas: "sidebar header"
+        "sidebar main-content";
+}
+
+.header {
+    border: 1px solid black;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content min-content;
+    grid-template-areas: "search-bar user-notif"
+        "user-active user-active";
+    gap: 20px;
+
+}
+
+.search-bar {
+    grid-area: search-bar;
+    justify-self: start;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+
+}
+
+.user-notif {
+    grid-area: user-notif;
+    justify-self: end;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.user-active {
+    grid-area: user-active;
+
+    align-self: center;
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+}
+
+.buttons {
+    justify-self: end;
+    align-self: center;
+}
+
+.sidebar {
+    border: 1px solid black;
+    grid-area: sidebar;
+    padding: 20px;
+}
+
+.sidebar h1{
+    margin-bottom: 50px;
+}
+.sidebar ul{
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 20px;
+}
+
+img {
+
+    width: 2rem;
+    height: 2rem;
+
+}
+
+.main-content {
+    border: 1px solid black;
+    grid-area: main-content;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "projects announcements "
+        "projects trending";
+        gap: 10px;
+        padding: 10px;
+}
+
+.projects {
+    grid-area: projects;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+.project{
+    border: 1px solid black;
+
+  
+}
+.announcements {
+    grid-area: announcements;
+    border: 1px solid black;
+}
+
+.trending {
+    grid-area: trending;
+    border: 1px solid black;
+}
