@@ -251,7 +251,7 @@ ul {
 
 .announcements {
     grid-area: announcements;
-    max-width: 300px;
+    
     background-color: #f6fff8;
     -webkit-box-shadow: 0 0 13.5px 5px #6b9080;
     -moz-box-shadow: 0 0 13.5px 5px #6b9080;
@@ -282,7 +282,7 @@ ul {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    max-width: 300px;
+    
     background-color: #f6fff8;
     -webkit-box-shadow: 0 0 13.5px 5px #6b9080;
     -moz-box-shadow: 0 0 13.5px 5px #6b9080;
