@@ -320,7 +320,7 @@ html{
     .sidebar li {
         display: flex;
         align-items: center;
-        font-size: 2.5rem;
+        font-size: 2rem;
         margin-bottom: 60px;
     }
     
@@ -330,7 +330,7 @@ html{
         height: 50px;
     }
     .sidebar h1{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
 
